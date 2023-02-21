@@ -68,10 +68,10 @@
     margin-top: 35px;
   }
 
-  .tabs__btn {
+  /* .tabs__btn {
     order: 3;
-    /* margin-top: 20px; */
-  }
+    margin-top: 20px;
+  } */
 
   .tab__content,
   .tabs {
@@ -91,6 +91,54 @@
   }
 }
 
+@media (max-width: 800px) {
+  .product-one__top {
+    position: relative;
+    z-index: 1;
+  }
+
+  .product-one__info-box {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 77px;
+    padding: 15px;
+    background-color: #fff;
+    transform: translateY(-250px);
+    transition: all 0.5s;
+    box-shadow: -2px 3px 3px 0px #c7c5c561;
+    text-align: center;
+  }
+
+  .product-one__info-box--active {
+    transform: translateY(0px);
+  }
+
+  .product-one__info {
+    margin-right: 0px;
+  }
+
+  .menu-btn {
+    display: block;
+    width: 35px;
+    height: 20px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    z-index: 4;
+  }
+
+  .menu-btn span {
+    display: block;
+    width: 35px;
+    height: 1px;
+    background-color: #000;
+  }
+
+  .header__item {
+    margin: 20px 0;
+  }
+}
+
 @media (max-width: 755px) {
   .video {
     justify-content: space-around;
@@ -102,37 +150,17 @@
 }
 
 @media (max-width: 735px) {
-  .tabs__btn {
-    margin-top: 20px;
-  }
-
-  .product-one__top {
+  /* .product-one__top {
     align-items: end;
-  }
-
-  .product-one__logo {
-    margin-bottom: auto;
-  }
-
-  .product-one__info-box {
-    flex-direction: column;
-    /* padding-top: 15px; */
-  }
+  } */
 
   .product-one__info {
-    order: 2;
-    margin-top: 7px;
-    width: 210px;
-    margin-right: 10px;
-    font-size: 14px;
-  }
-  /* .product-one__info {
     font-size: 15px;
     width: 150px;
     margin-right: 20px;
     text-align: center;
     line-height: 16px;
-  } */
+  }
 
   .gallery__item img {
     max-width: 210px;
@@ -166,22 +194,22 @@
 }
 
 @media (max-width: 585px) {
-  /* .product-one__info-box {
+  .product-one__info-box {
     flex-direction: column;
     padding-top: 15px;
-  } */
+  }
 
   .product-one__logo {
     margin-bottom: auto;
   }
 
-  /* .product-one__info {
+  .product-one__info {
     order: 2;
     margin-top: 7px;
     width: 208px;
     margin-right: 10px;
     font-size: 14px;
-  } */
+  }
   .tabs__btn {
     margin-right: 12px;
     min-height: 26px;
@@ -311,9 +339,9 @@
     margin-bottom: 20px;
   }
 
-  .product-one__top {
+  /* .product-one__top {
     flex-direction: column;
-  }
+  } */
 
   .gallery__item img {
     max-width: 225px;
