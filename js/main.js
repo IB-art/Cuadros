@@ -1,4 +1,8 @@
 $(function(){
+  $('.menu-btn').on('click', function(){
+    $('.product-one__info-box').toggleClass('product-one__info-box--active');
+  });
+
 
   $('.product-one__tabs .tab').on('click', function(event) {
     var id = $(this).attr('data-id');
